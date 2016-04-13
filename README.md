@@ -6,7 +6,7 @@ To reproduce the problem:
 
 WORKS: start the server with `mvn jetty run`, then access it, `curl -v http://localhost:8080/`
 
-DOES NOT WORK: start the server with `./run.sh`, it will throw the following NPE:
+DOES NOT WORK: start the server with `./run.sh`, it will throw a NPE:
 
 ```
 Exception in thread "main" java.lang.ExceptionInInitializerError
