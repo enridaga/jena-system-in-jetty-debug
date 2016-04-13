@@ -1,6 +1,6 @@
 # jena-system-in-jetty-debug
 
-[SOLVED] (See solution below)
+[SOLVED] (#Solution)
 
 ## Problem
 Test project to debug initialization of the Jena environment in a jetty-embedded app.
