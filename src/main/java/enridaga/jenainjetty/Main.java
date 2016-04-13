@@ -1,15 +1,12 @@
 package enridaga.jenainjetty;
 
-import org.apache.jena.system.JenaSystem;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.webapp.WebAppContext;
 
 public class Main {
-	static{
-		JenaSystem.DEBUG_INIT = true ;
-	}
+	
 	public static void main(String[] args) {
 		System.out.println("#1: server starting");
 		Server server = new Server();
