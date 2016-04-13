@@ -22,6 +22,7 @@ public class Application extends ResourceConfig implements ServletContextListene
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
 		log.info("Initializing context.");
+		JenaSystem.DEBUG_INIT = true;
 		JenaSystem.init();
 		// Create a folder jena-debug-tdb
 		File f = new File("./jena-debug-tdb");
