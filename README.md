@@ -47,7 +47,8 @@ Caused by: java.lang.NullPointerException
 	at org.apache.jena.tdb.sys.SystemTDB.fileMode(SystemTDB.java:356)
 	at org.apache.jena.tdb.setup.StoreParamsConst.<clinit>(StoreParamsConst.java:37)
 	... 29 more
-	```
+```
+
 ## Solution
 The problem was that Jena did not find all the components.
 Full explanation is on the Jena users list https://mail-archives.apache.org/mod_mbox/jena-users/201604.mbox/%3C570E57FC.9060406%40apache.org%3E , where it is recommended to package the server using the maven-shade-plugin, in order to properly aggregate the different version of the META-INF/services/org.apache.jena.system.JenaSubsystemLifecycle file.
